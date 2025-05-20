@@ -1,0 +1,75 @@
+/* Estilo exclusivo para a página de cadastro */
+main {
+    padding: 3rem 2rem;
+    background-color: #ecf0f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+main .formulario h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+main .campo {
+    margin-bottom: 1.2rem;
+}
+
+main label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+main input,
+main select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+main button {
+    display: block;
+    width: 100%;
+    background-color: #e1b70d;
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    main .formulario {
+        padding: 1.5rem;
+    }
+
+    main input,
+    main select {
+        font-size: 0.95rem;
+    }
+
+    main button {
+        font-size: 1rem;
+    }
+}

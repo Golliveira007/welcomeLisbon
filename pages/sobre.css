@@ -1,34 +1,142 @@
-main {
-    padding: 3rem 2rem;
-    background-color: #ecf0f1; /* cinza leve para contraste com o restante do site */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Hero Section específica da página Sobre */
-main .hero {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* Paleta de cores */
+:root {
+    --azul-lisboa: #2c3e50;
+    --amarelo-sol: #f1c40f;
+    --cinza-leve: #ecf0f1;
+    --branco: #ffffff;
+    --destaque: #3498db;
+}
+
+/* HEADER */
+header {
+    background-color: var(--azul-lisboa);
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--amarelo-sol);
+}
+
+/* HERO SECTION */
+.hero {
     background: linear-gradient(to right, #2980b9, #6dd5fa);
-    color: #ffffff;
-    padding: 2.5rem 1.5rem;
-    border-radius: 8px;
+    color: var(--branco);
+    padding: 4rem 2rem;
     text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-main .hero h1 {
-    font-size: 2.2rem;
-    margin: 0;
+.hero .btn {
+    background-color: var(--amarelo-sol);
+    color: var(--azul-lisboa);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Seção de texto explicativo */
-main section:not(.hero) {
-    background-color: #ffffff;
-    padding: 2rem 1.5rem;
+.hero .btn:hover {
+    background-color: #e1b70d;
+}
+
+/* DESTINOS */
+.destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: var(--cinza-leve);
+}
+
+.container {
+    background-color: var(--branco);
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
-main section:not(.hero) h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #2c3e50;
-    line-height: 1.6;
+.container h2 {
+    color: var(--azul-lisboa);
+    margin-bottom: 0.5rem;
+}
+
+.container p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--azul-lisboa);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVIDADE EXTRA */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero p,
+    .container p {
+        font-size: 1rem;
+    }
 }
