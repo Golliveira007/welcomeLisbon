@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/sobre.html">Sobre</a></li>
-            <li><a href="pages/contatos.html">Contatos</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h1>Bem-vindo a Lisboa</h1>
-        <p>Descubra a capital de Portugal, sua cultura, história e pontos turísticos incríveis.</p>
-        <a href="pages/pontos-turisticos.html">Conheça os pontos turísticos</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Welcome Lisbon</h1>
+            <p>Descubra a capital de Portugal, sua cultura, história e pontos turísticos incríveis.</p>
+            <a class="btn" href="pages/pontos-turisticos.html">Conheça os pontos turísticos</a>
+        </section>
+
+        <section class="destinos">
+            <article class="container">
+                <h2>Praça do Comércio</h2>
+                <p>A Praça do Comércio é um dos pontos mais icônicos de Lisboa, localizada às margens do Rio Tejo.</p>
+                <img src="./img/praçaComercio.jpg" alt="Praça do Comércio">
+            </article>
+
+            <article class="container">
+                <h2>Castelo de São Jorge</h2>
+                <p>O Castelo de São Jorge oferece uma vista panorâmica da cidade e é um marco histórico imperdível.</p>
+                <img src="./img/CasteloSãoJorge.webp" alt="Castelo de São Jorge">
+            </article>
+
+            <article class="container">
+                <h2>Arco da Rua Augusta</h2>
+                <p>O Arco da Rua Augusta celebra as conquistas portuguesas e marca a entrada triunfal para o centro da cidade.</p>
+                <img src="./img/ArcoDecobrimento.jpg" alt="Arco da Rua Augusta">
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Welcome Lisbon</p>
+        <p>&copy; 2025 Welcome Lisbon. Todos os direitos reservados.</p>
     </footer>
 
 </body>
