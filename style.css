@@ -28,7 +28,7 @@ body {
 /* HEADER */
 header {
     background-color: var(--azul-lisboa);
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav a {
     color: var(--branco);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 2rem;
     transition: color 0.3s ease;
 }
 
@@ -89,6 +89,13 @@ nav a:hover {
     gap: 2rem;
     padding: 3rem 2rem;
     background-color: var(--cinza-leve);
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+section :hover{
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
 }
 
 .container {
@@ -97,6 +104,10 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que todos os containers tenham a mesma altura */
+    padding: 1.5rem; /* Aumenta um pouco o padding */
 }
 
 .container h2 {
@@ -107,12 +118,15 @@ nav a:hover {
 .container p {
     font-size: 0.95rem;
     margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .container img {
     width: 100%;
-    height: auto;
+    height: 550px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a proporção e recorta se necessário */
     border-radius: 6px;
+    display: block; /* Remove espaços extras abaixo da imagem */
 }
 
 /* FOOTER */
@@ -120,7 +134,7 @@ footer {
     background-color: var(--azul-lisboa);
     color: var(--branco);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 2rem;
 }
 
