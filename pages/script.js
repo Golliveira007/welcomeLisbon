@@ -18,16 +18,23 @@ const pesquisarCep = async () => {
         } else {
             preencherFormulario(addres);
         }
+    } else {
+        alert("CEP inválido");
     }
 };
 
-preencherFormulario = (endereco) => {
-    
+const preencherFormulario = (endereco) => {
+    document.querySelector("#rua").value = endereco.logradouro;
+    document.querySelector("#bairro").value = endereco.bairro;
+    document.querySelector("#cidade").value = endereco.localidade;
+    document.querySelector("#estado").value = endereco.estado;
 }
 
- limparFormulario = () => {
+ const limparFormulario = () => {
     document.querySelector("#rua").value = "";
     document.querySelector("#bairro").value = "";
     document.querySelector("#cidade").value = "";
     document.querySelector("#estado").value = "";
 }
+
+document.querySelector("#cep").addEventListener("focusout", pesquisarCep);
