@@ -24,6 +24,11 @@ main .campo {
     margin-bottom: 1.2rem;
 }
 
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.10s ease;
+}
+
 main label {
     display: block;
     margin-bottom: 0.3rem;
@@ -37,7 +42,7 @@ main select {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 main button {
@@ -45,10 +50,10 @@ main button {
     width: 100%;
     background-color: #e1b70d;
     color: #fff;
-    padding: 0.9rem;
+    padding: 1.5rem;
     border: none;
     border-radius: 6px;
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
     margin-top: 1.5rem;
     transition: background-color 0.3s ease;
